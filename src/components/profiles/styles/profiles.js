@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: 'coolvetica';
+  font-family: 'Trebuchet MS';
   width: 100%;
   color: #333333;
   font-size: 48px;
@@ -26,7 +26,7 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
-  font-family: 'Coolvetica';
+  font-family: 'Trebuchet MS';
   letter-spacing: 1px;
   font-weight: bold;
   color: #333333;
