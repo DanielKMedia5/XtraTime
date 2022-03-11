@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: 'Coolvetica';
+  font-family: 'Trebuchet MS';
   width: 100%;
   color: #333333;
   font-size: 48px;
