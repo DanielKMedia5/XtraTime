@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Enjoy on your TV.",
+    "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+    "image": "/images/misc/HomeDevices_PS001.png",
+    "alt": "Enjoy on any device.",
+    "direction": "row"
+  },
+  {
+    "id": 2,
+    "title": "Chat to friends.",
+    "subTitle": "Watch your favourite football moments with friends.",
+    "image": "/images/misc/ChatFriends_PS001.png",
+    "alt": "Chat to friends.",
+    "direction": "row-reverse"
+  },
+  {
+    "id": 3,
+    "title": "Enter exclusive competitions.",
+    "subTitle": "Win loads of different prizes for simply being subscribed.",
+    "image": "/images/misc/HomeWinPrizes_PS001.png",
+    "alt": "Enter exclusvie competitions.",
+    "direction": "row"
+  },
+  {
+    "id": 4,
+    "title": "Relive history.",
+    "subTitle": "Re-watch the most iconic matches that have shaped the game we love today.",
+    "image": "/images/misc/HomeReliveHistory_PS001.png",
+    "alt": "Relive history.",
+    "direction": "row-reverse"
+  }
+]
