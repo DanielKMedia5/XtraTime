@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-html, body {
+html, body, h1, h2 {
     font-family: 'Helvetica Neue', Helvetica, Trebuchet MS, Century Gothic, Candara, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
