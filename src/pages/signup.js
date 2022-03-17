@@ -44,7 +44,7 @@ export default function Signup() {
         <>
             <HeaderContainer>
                 <Form>
-                    <Form.Title style={{ fontFamily: "Coolvetica" }}>Sign up</Form.Title>
+                    <Form.Title style={{ fontFamily: "Century Gothic" }}>Sign up</Form.Title>
                     {error && <Form.Error>{error}</Form.Error>}
 
                     <Form.Base onSubmit={handleSignup} method="POST">

@@ -35,7 +35,7 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
 
     return (
         <Header 
-        onClick={() => setToggleShow((toggleshow) => !toggleShow)}
+        onClick={() => setToggleShow((toggleShow) => !toggleShow)}
         {...restProps}>
             {children}
             {toggleShow ? (
@@ -47,7 +47,7 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
     );
 };
 
-Accordion.Body = function AccordionBosy ({children, ...restProps}) {
+Accordion.Body = function AccordionBody ({children, ...restProps}) {
     const { toggleShow } = useContext(ToggleContext);
 
     return toggleShow ? <Body { ...restProps}>{children}</Body> : null;

@@ -216,7 +216,6 @@ color: #ebebeb;
 font-size: 50px;
 font-weight: bold;
 line-height: normal;
-letter-spacing: 2px;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 margin: 0;
 `;

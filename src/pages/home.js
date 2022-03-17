@@ -1,4 +1,5 @@
 import React from 'react';
+import * as ROUTES from '../constants/routes';
 import { Feature, OptForm } from '../components';
 import { HeaderContainer } from '../containers/header';
 import { JumbotronContainer } from '../containers/jumbotron';
@@ -11,13 +12,12 @@ export default function Home() {
         <>
             <HeaderContainer>
                 <Feature>
-                    <Feature.Title style={{ fontFamily: "Coolvetica" }}>“What a goal, at what a time, in what a place, what a player.” - Peter Drury</Feature.Title>
+                    <Feature.Title style={{ fontFamily: "Century Gothic"}}>“What a goal, at what a time, in what a place, what a player.” - Peter Drury</Feature.Title>
                     <Feature.SubTitle>Watch XtraTime anywhere. Cancel at any time.</Feature.SubTitle>
                     <OptForm>
-                    <OptForm.Input placeholder="Email address" />
-                    <OptForm.Button>Try it now</OptForm.Button>
+                    <OptForm.Button to={ROUTES.SIGN_UP}>Sign up now</OptForm.Button>
                     <OptForm.Break />
-                    <OptForm.Text style={{ color: "white" }}>Ready to jump into the action? Enter your email to create or restart your membership.</OptForm.Text>
+                    <OptForm.Text style={{ color: "#ebebeb" }}>Ready to jump into the action? Sign up to create or restart your membership.</OptForm.Text>
                 </OptForm>
                 </Feature>
                

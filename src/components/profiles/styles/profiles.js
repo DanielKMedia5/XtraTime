@@ -10,12 +10,12 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: 'coolvetica';
+  font-family: 'Century Gothic';
   width: 100%;
   color: #333333;
   font-size: 48px;
   text-align: center;
-  font-weight: 500;
+  font-weight: bold;
 `;
 
 export const List = styled.ul`
@@ -26,7 +26,7 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
-  font-family: 'coolvetica';
+  font-family: 'Century Gothic';
   letter-spacing: 1px;
   font-weight: bold;
   color: #333333;

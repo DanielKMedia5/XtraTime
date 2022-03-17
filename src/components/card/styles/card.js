@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
 
 export const Title = styled.p`
+font-family: Century Gothic;
   font-size: 24px;
   color: #333333;
   font-weight: bold;
@@ -160,7 +161,7 @@ export const FeatureTitle = styled(Title)`
 `;
 
 export const FeatureClose = styled.button`
-  color: white;
+  color: #ebebeb;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -169,6 +170,7 @@ export const FeatureClose = styled.button`
   border: 0;
 
   img {
+    filter: brightness(0) invert(1);
     width: 24px;
   }
 `;
@@ -185,7 +187,7 @@ export const Content = styled.div`
 `;
 
 export const Maturity = styled.div`
-  background-color: ${({ rating }) => (rating >= 15 ? '#f44336' : '#2f9600')};
+  background-color: ${({ rating }) => (rating >= 15 ? '#992421' : '#227f14')};
   border-radius: 15px;
   width: 28px;
   line-height: 28px;

@@ -72,7 +72,7 @@ export function BrowseContainer({ slides }) {
                     </Header.Group>
                 </Header.Frame>
                 <Header.Feature>
-                    <Header.FeatureCallout style={{ fontFamily: "Coolvetica" }}>Watch the 2020-21 FA Cup Final Now</Header.FeatureCallout>
+                    <Header.FeatureCallout style={{ fontFamily: "Century Gothic" }}>Watch the 2020-21 FA Cup Final Now</Header.FeatureCallout>
                     <Header.Text>
                         The 140th FA Cup Final, played between Chelsea and Leicester City at Wembley Stadium, London, England on 15 May 2021.
                         An official attendance of 20,000 due to the COVID-19 pandemic in England. Michael Oliver was the referee, assisted by

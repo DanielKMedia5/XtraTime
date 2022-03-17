@@ -34,7 +34,7 @@ navigate.push(ROUTES.BROWSE);
     return (<>
         <HeaderContainer>
             <Form>
-                <Form.Title style={{ fontFamily: "Coolvetica" }}>Sign In</Form.Title>
+                <Form.Title style={{ fontFamily: "Century Gothic" }}>Sign In</Form.Title>
                 {error && <Form.Error>{error}</Form.Error>}
 
                 <Form.Base onSubmit={handleSignIn} method="POST">

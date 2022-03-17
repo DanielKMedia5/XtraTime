@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -27,7 +28,7 @@ export const Break = styled.div`
   height: 0;
 `;
 
-export const Button = styled.button`
+export const Button = styled(ReactRouterLink)`
   display: flex;
   align-items: center;
   height: 70px;
@@ -38,6 +39,7 @@ export const Button = styled.button`
   font-size: 26px;
   border: 0;
   cursor: pointer;
+  text-decoration: none;
 
   img {
     margin-left: 10px;

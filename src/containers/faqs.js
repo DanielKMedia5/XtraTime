@@ -1,4 +1,5 @@
 import React from 'react';
+import * as ROUTES from '../constants/routes';
 import { Accordion } from '../components';
 import OptForm from '../components/opt-form';
 import faqsData from '../fixtures/faqs.json';
@@ -6,7 +7,7 @@ import faqsData from '../fixtures/faqs.json';
 export function FaqsContainer() {
   return (
     <Accordion>
-      <Accordion.Title style={{ fontFamily: "Coolvetica" }}>Frequently Asked Questions</Accordion.Title>
+      <Accordion.Title style={{ fontFamily: "Century Gothic" }}>Frequently Asked Questions</Accordion.Title>
       {faqsData.map((item) => (
         <Accordion.Item key={item.id}>
           <Accordion.Header>{item.header}</Accordion.Header>
@@ -16,10 +17,9 @@ export function FaqsContainer() {
       <Accordion.Item />
 
       <OptForm>
-        <OptForm.Input placeholder="Email address" />
-        <OptForm.Button>Try it now</OptForm.Button>
+        <OptForm.Button to={ROUTES.SIGN_UP}>Sign Up Now</OptForm.Button>
         <OptForm.Break />
-        <OptForm.Text>Ready to jump into the action? Enter your email to create or restart your membership.</OptForm.Text>
+        <OptForm.Text>Ready to jump into the action? Sign up to create or restart your membership.</OptForm.Text>
       </OptForm>
     </Accordion>
   );

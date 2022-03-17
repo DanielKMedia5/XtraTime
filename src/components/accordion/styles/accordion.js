@@ -36,7 +36,8 @@ background: #bababa;
 padding: 0.8em 1.2em;
 user-select: none;
 align-items: center;
-font-family: 'Coolvetica';
+font-family: 'Century Gothic';
+font-weight: bold;
 
 img {
     filter: brightness(0) invert(0);
@@ -56,7 +57,7 @@ img {
 export const Body = styled.div`
 max-height: 1200px;
 transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-font-size: 26px;
+font-size: 22px;
 font-weight: normal;
 line-height: normal;
 background: #bababa;
