@@ -89,6 +89,7 @@ export const Item = styled.div`
   position: relative;
   cursor: pointer;
   transition: transform 0.2s;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 
   &:hover {
     transform: scale(1.3);
