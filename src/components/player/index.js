@@ -37,6 +37,7 @@ Player.Button = function PlayerButton({ ...restProps }) {
 
   return (
     <Button onClick={() => setShowPlayer((showPlayer) => !showPlayer)} {...restProps}>
+      <img src="/images/icons/play.png" alt="Play" />
       Play
     </Button>
   );

@@ -9,7 +9,10 @@ import {
   Feature,
   FeatureTitle,
   FeatureText,
+  FeatureFacts,
   FeatureClose,
+  FeatureFriends,
+  FeatureFav,
   Maturity,
   Content,
   Meta,
@@ -83,6 +86,7 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
       <Content>
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
         <FeatureText>{itemFeature.description}</FeatureText>
+        <FeatureFacts>{itemFeature.facts}</FeatureFacts>
         <FeatureClose onClick={() => setShowFeature(false)}>
           <img src="/images/icons/close.png" alt="Close" />
         </FeatureClose>
@@ -93,8 +97,17 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
             {itemFeature.genre.split(' ')
               .map((each) => each.charAt(0).toUpperCase() + each.slice(1))
               .join(' ')}
+              
           </FeatureText>
         </Group>
+
+        <FeatureFriends>
+          <img src="/images/icons/friends.png" alt="Friends" />
+        </FeatureFriends>
+
+        <FeatureFav>
+          <img src="/images/icons/favlist.png" alt="Favourites List" />
+        </FeatureFav>
 
         {children}
       </Content>

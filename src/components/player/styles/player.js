@@ -60,7 +60,7 @@ position: absolute;
 
 export const Button = styled.button`
 background-color: #f2d230;
-border-color: #e0c226;
+border-color: transparent;
 width: 115px;
   height: 45px;
   text-transform: uppercase;
@@ -73,8 +73,17 @@ width: 115px;
   align-items: center;
   justify-content: center;
   padding-left: 0;
+  transition: transform 0.2s;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+
   &:hover {
     transform: scale(1.05);
-    background-color: #e0c226;
+    background-color: #f2cd0f;
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+    padding-right: 6px;
   }
   `;

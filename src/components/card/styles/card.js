@@ -121,6 +121,26 @@ export const Item = styled.div`
   }
 `;
 
+export const FeatureFacts = styled.p`
+  font-size: 18px;
+  color: #333333;
+  font-weight: ${({ fontWeight }) => (fontWeight === 'bold' ? 'bold' : 'normal')};
+  padding-top: 10px;
+  white-space: nowrap;
+  
+  @media (max-width: 1000px) {
+    line-height: 22px;
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  @media (max-width: 600px) {
+    line-height: 22px;
+    font-size: 14px;
+    white-space: normal;
+  }
+`;
+
 export const FeatureText = styled.p`
   font-size: 18px;
   color: #333333;
@@ -174,6 +194,51 @@ export const FeatureClose = styled.button`
   img {
     filter: brightness(0) invert(1);
     width: 24px;
+  }
+`;
+
+export const FeatureFriends = styled.button`
+  position: absolute;
+  left: 200px;
+  bottom: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  transition: transform 0.2s;
+  
+  img {
+    width: 46px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 1000px) {
+    bottom: 24px;
+    left: 180px; 
+  }
+`;
+
+export const FeatureFav = styled.button`
+  position: absolute;
+  left: 270px;
+  bottom: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  transition: transform 0.2s;
+  
+
+  img {
+    width: 46px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 1000px) {
+    bottom: 24px;
+    left: 250px; 
   }
 `;
 
