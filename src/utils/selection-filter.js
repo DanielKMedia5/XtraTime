@@ -14,7 +14,7 @@ export default function selectionFilter({ matches, highlights }) {
                 data: matches.filter((item) => item.genre === 'efl championship play-off finals'),
             },
             {
-                title: 'Womens FA Cup Finals',
+                title: 'Women\'s FA Cup Finals',
                 data: matches.filter((item) => item.genre === 'womens fa cup finals'),
             },
             {
@@ -43,6 +43,36 @@ export default function selectionFilter({ matches, highlights }) {
                 title: 'FA Community Shield',
                 data: highlights.filter((item) => item.genre === 'fa community shield'),
             },
-        ]
+        ],
+        facup: [
+            {
+                title: 'FA Cup Final Matches', 
+                data: matches.filter((item) => item.genre === 'fa cup finals'),
+            },
+            {
+                title: 'FA Cup Final Highlights', 
+                data: highlights.filter((item) => item.genre === 'fa cup finals'),
+            }
+        ],
+        worldcup: [
+            {
+                title: 'World Cup Final Matches', 
+                data: matches.filter((item) => item.genre === 'world cup finals'),
+            },
+            {
+                title: 'World Cup Final Highlights', 
+                data: highlights.filter((item) => item.genre === 'world cup finals'),
+            }
+        ],
+        communityshield: [
+            {
+                title: 'FA Community Shield Matches', 
+                data: matches.filter((item) => item.genre === 'fa community shield'),
+            },
+            {
+                title: 'FA Community Shield Highlights', 
+                data: highlights.filter((item) => item.genre === 'fa community shield'),
+            }
+        ],
     };
 }
