@@ -43,7 +43,6 @@ export const Button = styled(ReactRouterLink)`
 
   img {
     margin-left: 10px;
-    filter: brightness(0) invert(0);
     width: 24px;
 
     @media (max-width: 1000px) {
