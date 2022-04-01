@@ -7,6 +7,7 @@ import { Card, Header, Loading, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 
+
 export function BrowseContainer({ slides }) {
     const [category, setCategory] = useState('matches');
     const [searchTerm, setSearchTerm] = useState('');
@@ -30,13 +31,13 @@ export function BrowseContainer({ slides }) {
     useEffect(() => {
         const fuse = new Fuse(slideRows, { keys: ['data.description', 'data.title', 'data.genre'] });
         const results = fuse.search(searchTerm).map(({ item }) => item);
-    
+
         if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
-          setSlideRows(results);
+            setSlideRows(results);
         } else {
-          setSlideRows(slides[category]);
+            setSlideRows(slides[category]);
         }
-      }, [searchTerm]);
+    }, [searchTerm]);
 
     return profile.displayName ? (
         <>
@@ -45,12 +46,16 @@ export function BrowseContainer({ slides }) {
             ) : (
                 <Loading.ReleaseBody />
             )}
+
             <Header src="facup2021" dontShowOnSmallViewPort>
                 <Header.Frame>
                     <Header.Group>
                         <Header.Logo to={ROUTES.HOME} src={logo} alt="XtraTime" />
                         <Header.TextLink active={category === 'matches' ? 'true' : 'false'} onClick={() => setCategory('matches')}>Matches</Header.TextLink>
                         <Header.TextLink active={category === 'highlights' ? 'true' : 'false'} onClick={() => setCategory('highlights')}>Highlights</Header.TextLink>
+                        <Header.TextLink active={category === 'facup' ? 'true' : 'false'} onClick={() => setCategory('facup')}>FA Cup</Header.TextLink>
+                        <Header.TextLink active={category === 'worldcup' ? 'true' : 'false'} onClick={() => setCategory('worldcup')}>World Cup</Header.TextLink>
+                        <Header.TextLink active={category === 'communityshield' ? 'true' : 'false'} onClick={() => setCategory('communityshield')}>FA Community Shield</Header.TextLink>
                     </Header.Group>
                     <Header.Group>
                         <Header.Search
@@ -80,9 +85,13 @@ export function BrowseContainer({ slides }) {
                         apprearance and fourth in the last five seasons, winning one. Leicester City had appeared in four Finals prior to 2021,
                         losing them all.
                     </Header.Text>
-                    <Header.PlayButton>Play</Header.PlayButton>
+                    <Player>
+                        <Player.Button />
+                        <Player.Video src={"https://rr4---sn-5hne6nzs.googlevideo.com/videoplayback?expire=1648760043&ei=i8BFYtbmHI6rxN8PzN-U6AU&ip=80.1.41.204&id=o-AEmr9jZV4pdWUHOCBREtYKvvaCBJuRJwVERf8GqfBOu-&itag=22&source=youtube&requiressl=yes&spc=4ocVC6PMod6ztd4P5lln51ROGf0k&vprv=1&mime=video%2Fmp4&ns=8bPyZyc8wg1-X8L8Yw-9s20G&cnr=14&ratebypass=yes&dur=6041.298&lmt=1637455184750195&fexp=24001373,24007246,24162928&c=WEB&txp=5432434&n=DEgrmWSBJnrWDq3WWY3&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhAKgdsUXnvEiWFL7HvSPeI2MBn2_hQCYeNZmXQzBpH8IWAiBUILT-kM3C6eqP2o72anmy11cAUSvW3isy8Am_nDFl6w%3D%3D&cm2rm=sn-8pgbpohxqp5-auod7s,sn-aigesr7s&req_id=51b7c97b6e62a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&cmsv=e&mh=FJ&mm=34&mn=sn-5hne6nzs&ms=ltu&mt=1648738354&mv=m&mvi=4&pl=24&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAMIzuuWkhI50o-d1kpgjDICnnDLe59Zy8HAUoUFh6HaCAiAJ-ZRcOp3ib5JvqFlEuedEJnFuvNFphF_skoBIRT3aTw%3D%3D"} />
+                    </Player>
                 </Header.Feature>
             </Header>
+
 
             <Card.Group>
                 {slideRows.map((slideItem) => (
