@@ -87,7 +87,7 @@ export function BrowseContainer({ slides }) {
                     </Header.Text>
                     <Player>
                         <Player.Button />
-                        <Player.Video src={"https://firebasestorage.googleapis.com/v0/b/xtratime-c3b43.appspot.com/o/2021-fa-cup-final.mp4?alt=media&token=981de14d-0605-45b9-9cfb-cb2a9bbeb907"} />
+                        <Player.Video src={"https://firebasestorage.googleapis.com/v0/b/xtratime-c3b43.appspot.com/o/matches%2FFA%20Cup%20Finals%2F2021-fa-cup-final.mp4?alt=media&token=e4a0c5f7-b031-4b50-956d-974ea4dcc714"} />
                     </Player>
                 </Header.Feature>
             </Header>
@@ -111,7 +111,7 @@ export function BrowseContainer({ slides }) {
                         <Card.Feature category={category}>
                             <Player>
                                 <Player.Button />
-                                <Player.Video src="/videos/2021-efl-championship-final.mp4" />
+                                <Player.Video src="https://firebasestorage.googleapis.com/v0/b/xtratime-c3b43.appspot.com/o/highlights%2FEFL%20Championship%20play-off%20Finals%2F2021-efl-championship-final.mp4?alt=media&token=5663a3d2-035c-461d-93b1-219f1137b8d9" />
                             </Player>
                         </Card.Feature>
                     </Card>
