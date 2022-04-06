@@ -17,7 +17,7 @@ export default function Home() {
                     <OptForm>
                     <OptForm.Button to={ROUTES.SIGN_UP}>Sign up now</OptForm.Button>
                     <OptForm.Break />
-                    <OptForm.Text style={{ color: "#ebebeb" }}>Ready to jump into the action? Sign up to create or restart your membership.</OptForm.Text>
+                    <OptForm.Text style={{ color: "#ebebeb" }}>Ready to jump into the action? Sign up to create or restart your membership for as little as £4.99.</OptForm.Text>
                 </OptForm>
                 </Feature>
                
